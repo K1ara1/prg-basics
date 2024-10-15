@@ -2,7 +2,7 @@ university = 'Krakow University of Economics'
 university_expanded = ''
 
 for char in university:
-    univerity_expanded = university_expanded + ... + ...
+    university_expanded = university_expanded + char + ' '
 
-print(...)
-print(...)
+print(university)
+print(university_expanded)

@@ -1,10 +1,11 @@
 basic_salary = 5000
 total_salary = 0
 is_bonus = input("Enter if you recieve a bonus: (Y/N)")
-bonus = 1.5 
+bonus = " "
 
 if is_bonus == "Y":
-    total_salary = basic_salary*bonus 
+    bonus = int(input("Enter your bonus: "))
+    total_salary = basic_salary*bonus/100 + basic_salary
 else:
     total_salary = basic_salary
 
