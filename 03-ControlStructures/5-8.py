@@ -31,7 +31,7 @@ while True:
         print(f"Your current pin is: {pin}")
     elif choice == '5':
         pin = input("Enter new PIN: ")
-        if pin.isdigit() == True:
+        if len(pin) == 4 and pin.isdigit() == True:
             print(f"Your new PIN is: {pin}")
         else:
             print(f'Incorrect PIN.')
