@@ -3,17 +3,18 @@ def time_string(hours, minutes, time_format):
     minutes = int(minutes)  
 
     if time_format == '24':
-        return f'{hours:02}:{minutes:02}'  
+        result = f'{hours:02}:{minutes:02}'  
     
     elif time_format == '12':
         if hours == 0:  
-            return f'12:{minutes:02}'
+            result = f'12:{minutes:02}'
         elif hours < 12:  
-            return f'{hours}:{minutes:02}'
+            result = f'{hours}:{minutes:02}'
         elif hours == 12:  
-            return f'12:{minutes:02}'
+            result = f'12:{minutes:02}'
         else: 
-            return f'{hours - 12}:{minutes:02}'
+            result = f'{hours - 12}:{minutes:02}'
+    return result
 
 hours = input('Enter hours: ')
 minutes = input('Enter minutes: ')
