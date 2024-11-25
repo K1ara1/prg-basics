@@ -19,5 +19,5 @@ def f(n):
     
     return nth_prime
 
-result = int(input('Enter number: '))
-print(f(result))
+if __name__ == '__main__':
+    print(f(5))

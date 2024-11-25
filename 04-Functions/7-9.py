@@ -1,15 +1,8 @@
-def f(number, even):
+def f(n):
+    result = ''
+    for i in range(1, n+1):
+        result += str(i)
+    return result
 
-    digit_sum = 0
-    
-    for digit in str(number):
-        digit = int(digit)
-        if (even and digit % 2 == 0) or (not even and digit % 2 != 0):
-            digit_sum += digit
-    
-    return digit_sum
-
-num = input('Enter your number: ')
-result = f(num)
-
-print(result)
+if __name__ == '__main__':
+    print(f(5))

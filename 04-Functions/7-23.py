@@ -1,8 +1,10 @@
 def f(password):
     
-    if len(password) < 6:
+    if len(password) < 6 or len(password) != len(set(password)):
         return False
-    return len(password) == len(set(password))
+    else:
+        return True
+
     
 
 result = input('Enter password: ')

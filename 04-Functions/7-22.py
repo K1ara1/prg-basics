@@ -4,8 +4,7 @@ def f(name):
     acronym = ""
     
     for word in words:
-        if word: 
-            acronym += word[0].upper()
+        acronym += word[0]
     return acronym
 
 result = input('Enter text: ')

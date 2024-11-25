@@ -1,0 +1,14 @@
+matrix = [
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0]
+]
+
+for i in range(len(matrix)):
+    matrix[i][i] = 1
+
+print("Modified Matrix:")
+for row in matrix: 
+    for value in row:
+        print(value, end=' ')
+    print()
