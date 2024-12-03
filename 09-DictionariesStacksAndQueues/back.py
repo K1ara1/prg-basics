@@ -17,7 +17,7 @@ while True:
       else:
          print('<-- Going back to a previously visited website')
          website = ...
-   elif ... != "":
+   elif website != '0':
       ...
 
    # print name of website you are currently viewing

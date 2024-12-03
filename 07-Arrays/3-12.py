@@ -3,9 +3,9 @@ def print_unique_elements(array):
 
     for num in array:
         if num in element_count:
-            element_count[num] += 1  
+            element_count[num] += 1
         else:
-            element_count[num] = 1  
+            element_count[num] = 1
 
     unique_elements = []
     for num, count in element_count.items():
